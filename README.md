@@ -31,6 +31,11 @@ Quartus 13.1（建议版本）
 准备 网线 一根
 
 Quartus编译生成的为*.sof文件格式，需要转换为*.rbf文件。
+在quartus软件中，选择菜单：File-Conver Programming Files
+在页面上选择生成输出的文件为.rbf格式；
+定义输出的文件名称；
+添加待生成的.sof文件；
+点击生成（Generate）按钮，即可完成下载文件的转换。
 
 寻找试验箱IP 理论上为10.10.10.185
 
