@@ -58,5 +58,6 @@ Quartus编译生成的为*.sof文件格式，需要转换为*.rbf文件。
 
 [HDB3编译码原理](https://blog.csdn.net/cfc1243570631/article/details/9078419)
 # 参考代码
+https://github.com/piratfm/HDB3_encode_decode
 
-
+https://github.com/xuhangamy/HDB3codec_FPGA
