@@ -67,3 +67,7 @@ Programming file type 选择Raw Binary file(.rbf),然后选择生成rbf的路径
 https://github.com/piratfm/HDB3_encode_decode
 
 https://github.com/xuhangamy/HDB3codec_FPGA
+
+# 编码过程
+
+首先将输入的原始数据码流进行 4 个连 0 的检测，对第 4 个 0 替换成 V 码。
