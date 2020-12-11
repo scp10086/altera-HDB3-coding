@@ -36,12 +36,17 @@ FPGA芯片型号：EP4CE6E22C8
 # 下载
 准备 网线 一根
 
-Quartus编译生成的为*.sof文件格式，需要转换为*.rbf文件。
-在quartus软件中，选择菜单：File-Conver Programming Files
-在页面上选择生成输出的文件为.rbf格式；
-定义输出的文件名称；
-添加待生成的.sof文件；
-点击生成（Generate）按钮，即可完成下载文件的转换。
+使用quartus ii 编译完程序后，在工程的output_files文件夹里面生成了一个xxxxx.sof文件。
+
+转换sof为rbf;
+
+打开quartus ii -》file->convert Programming file ;
+
+Programming file type 选择Raw Binary file(.rbf),然后选择生成rbf的路径。
+
+在Input file to convert栏点击SOF Data ,点击add file ,选择刚刚生成的xxxxx.sof文件
+
+点generate生成rbf文件。
 
 寻找试验箱IP 理论上为10.10.10.185
 
