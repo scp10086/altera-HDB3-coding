@@ -33,6 +33,7 @@ FPGA芯片型号：EP4CE6E22C8
 |HDB3时钟| 2p3 |
 |使用的demo|ex1_A2|
 
+code1 和 code2 实现 减法器电路 的输入 % V_out = V_code1 - V_code2% 
 # 下载
 准备 网线 一根
 
