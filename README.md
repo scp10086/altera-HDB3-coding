@@ -55,3 +55,8 @@ Quartus编译生成的为*.sof文件格式，需要转换为*.rbf文件。
 
 # 实验原理
 [通信原理中的HDB3码的编码规则](https://zhuanlan.zhihu.com/p/86177759)
+
+[HDB3编译码原理](https://blog.csdn.net/cfc1243570631/article/details/9078419)
+# 参考代码
+
+
