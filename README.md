@@ -87,3 +87,13 @@ https://blog.csdn.net/lgfx21/article/details/88599919
 
 Quartus系列：Quartus II 功能仿真设置流程
 https://www.cnblogs.com/xgcl-wei/p/9021586.html
+
+# 报错解决
+记得去下载 modelsim-altera 13.1
+之后会报错 
+
+【Modelsim常见问题】Can’t launch the ModelSim-Altera software
+报错信息：
+
+【分享转发】Modelsim常见问题合集,常见Modelsim仿真相关问题收录  
+https://hifpga.com/%E9%97%AE%E9%A2%98/36787/%E5%88%86%E4%BA%AB%E8%BD%AC%E5%8F%91modelsim%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%90%88%E9%9B%86%E5%B8%B8%E8%A7%81modelsim%E4%BB%BF%E7%9C%9F%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98%E6%94%B6%E5%BD%95/
