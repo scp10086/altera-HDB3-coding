@@ -76,3 +76,8 @@ https://github.com/xuhangamy/HDB3codec_FPGA
 B 码。下面是具体的 VerilogHDL 实现代码：
 
 对原数据码流中的 1 与增加的 B 码一起进行正负极性交替变换；第一个 V 码与第一个数据 1 的极性一致，从第二个 V 码开始则正负极性交替变换。
+
+# 仿真
+
+Quartus II 调用 Modelsim 仿真
+https://www.runoob.com/w3cnote/verilog-install.html
