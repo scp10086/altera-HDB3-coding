@@ -81,3 +81,9 @@ B 码。下面是具体的 VerilogHDL 实现代码：
 
 Quartus II 调用 Modelsim 仿真
 https://www.runoob.com/w3cnote/verilog-install.html
+
+Quartus II 13简易仿真教程
+https://blog.csdn.net/lgfx21/article/details/88599919
+
+Quartus系列：Quartus II 功能仿真设置流程
+https://www.cnblogs.com/xgcl-wei/p/9021586.html
