@@ -97,3 +97,28 @@ https://www.cnblogs.com/xgcl-wei/p/9021586.html
 
 【分享转发】Modelsim常见问题合集,常见Modelsim仿真相关问题收录  
 https://hifpga.com/%E9%97%AE%E9%A2%98/36787/%E5%88%86%E4%BA%AB%E8%BD%AC%E5%8F%91modelsim%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%90%88%E9%9B%86%E5%B8%B8%E8%A7%81modelsim%E4%BB%BF%E7%9C%9F%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98%E6%94%B6%E5%BD%95/
+
+# rbf
+
+由于之前使用不同的开发板测试代码，发现开发板本身可能有问题 所以要提前编译了一个测试用的rbf
+
+注意一下情况是错误的。
+
+为什么 2p1 PN序列 和2p3 时钟 输出的信号 都是双极性信号 这不合理
+
+1.rbf 
+指示灯会熄灭。 
+PN,           //2P01
+DPN,          //2P02
+PNCLK,        //2P03
+
+# 时间
+
+在老师给的demo ex1_A2里，时钟为 62us 或者 64us 周期为 16.13khz。
+15PN 对应 15个时钟周期 一次循环为940us 周期为1.064khz。
+
+# 使用
+
+将 src文件夹里的 文件 
+Board02.v替换ex1_A2 demo工程中的对应文件
+将 hdb3_add_v.v hdb3_add_b.v hdb3_d2t.v 放到工程文件家下 ，并在软件中添加到工程里。
