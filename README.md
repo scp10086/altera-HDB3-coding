@@ -121,4 +121,4 @@ PNCLK,        //2P03
 
 将 src文件夹里的 文件 
 Board02.v替换ex1_A2 demo工程中的对应文件
-将 hdb3_add_v.v hdb3_add_b.v hdb3_d2t.v 放到工程文件家下 ，并在软件中添加到工程里。
+将 hdb3_add_v.v hdb3_add_b.v hdb3_d2t.v 放到工程文件夹下 ，并在软件中添加到工程里。
