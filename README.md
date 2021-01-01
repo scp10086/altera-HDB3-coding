@@ -98,6 +98,11 @@ https://www.cnblogs.com/xgcl-wei/p/9021586.html
 【分享转发】Modelsim常见问题合集,常见Modelsim仿真相关问题收录  
 https://hifpga.com/%E9%97%AE%E9%A2%98/36787/%E5%88%86%E4%BA%AB%E8%BD%AC%E5%8F%91modelsim%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%90%88%E9%9B%86%E5%B8%B8%E8%A7%81modelsim%E4%BB%BF%E7%9C%9F%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98%E6%94%B6%E5%BD%95/
 
+时钟不能太快 这会导致 示波器显示有问题 建议采用PN序列输出的时钟
+
+建议采用状态机改写各个模块。
+
+使用全零序列测试V码和B码是否正常添加到了序列里。
 # rbf
 
 由于之前使用不同的开发板测试代码，发现开发板本身可能有问题 所以要提前编译了一个测试用的rbf
@@ -119,6 +124,6 @@ PNCLK,        //2P03
 
 # 使用
 
-将 src文件夹里的 文件 
+将 src20201231文件夹里的 文件 
 Board02.v替换ex1_A2 demo工程中的对应文件
 将 hdb3_add_v.v hdb3_add_b.v hdb3_d2t.v 放到工程文件家下 ，并在软件中添加到工程里。
