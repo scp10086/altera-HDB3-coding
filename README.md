@@ -88,6 +88,13 @@ https://blog.csdn.net/lgfx21/article/details/88599919
 Quartus系列：Quartus II 功能仿真设置流程
 https://www.cnblogs.com/xgcl-wei/p/9021586.html
 
+本实验使用Modelsim Altera 10.1d进行仿真，需另外破解，破解方式及大部分问题见以上链接。
+具体过程：
+1.编写testbench，任意方式添加时钟，需要对输入初始化，否则仿真时输入高阻，输出不定；
+2.仿真例程失败，例程不讲武德，用于PN序列发生的代码没有初始化，且有的代码无法通过编译（仿真比较严格，不能在使用变量之后再声明），需要自行修改；
+3.最好修改PN时钟周期，否则波形看起来不方便（将jd_gen里的count_div[11]改为更小的数字，记得最后改回来）；
+4.PLL在仿真中似乎不起作用，不过不影响逻辑验证。
+
 # 报错解决
 记得去下载 modelsim-altera 13.1
 之后会报错 
@@ -124,6 +131,6 @@ PNCLK,        //2P03
 
 # 使用
 
-将 src20201231文件夹里的 文件 
-Board02.v替换ex1_A2 demo工程中的对应文件
-将 hdb3_add_v.v hdb3_add_b.v hdb3_d2t.v 放到工程文件夹下 ，并在软件中添加到工程里。
+将 src20201231文件夹里的 文件 Board02.v替换ex1_A2 demo工程中的对应文件；
+将 hdb3_add_v.v hdb3_add_b.v hdb3_d2t.v jd_gen.v放到工程文件夹下 ，并在软件中添加到工程里；
+在quartus中生成仿真文件（链接里应该有具体方法），用simulation/modelsim/Board02.vt代替生成的模板，并确保文件名等与设置一致。
