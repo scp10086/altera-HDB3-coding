@@ -1,0 +1,121 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench template that is freely editable to  
+// suit user's needs .Comments are provided in each section to help the user    
+// fill out necessary details.                                                  
+// *****************************************************************************
+// Generated on "01/02/2021 22:08:40"
+                                                                                
+// Verilog Test Bench template for design : Board02
+// 
+// Simulation tool : ModelSim-Altera (Verilog)
+// 
+
+`timescale 1 ns/ 1 ps
+module Board02_tb();
+// constants                                           
+// general purpose registers
+reg eachvec;
+// test vector input registers
+reg DATA;
+reg HOLD;
+reg MRESET;
+reg RHDB31;
+reg RHDB32;
+reg S2CLK;
+reg S2MISO;
+reg S2MOSI;
+reg S2NSS;
+reg SYSCLK;
+reg U3TXD;
+reg WMD;
+// wires                                               
+wire CODE1;
+wire CODE2;
+wire DPN;
+wire NOISE;
+wire PN;
+wire PNCLK;
+wire RECOVER_CLK;
+wire RECOVER_DATA;
+wire RUN;
+wire U3RXD;
+
+// assign statements (if any)                          
+Board02 i1 (
+// port map - connection between master ports and signals/registers   
+	.CODE1(CODE1),
+	.CODE2(CODE2),
+	.DATA(DATA),
+	.DPN(DPN),
+	.HOLD(HOLD),
+	.MRESET(MRESET),
+	.NOISE(NOISE),
+	.PN(PN),
+	.PNCLK(PNCLK),
+	.RECOVER_CLK(RECOVER_CLK),
+	.RECOVER_DATA(RECOVER_DATA),
+	.RHDB31(RHDB31),
+	.RHDB32(RHDB32),
+	.RUN(RUN),
+	.S2CLK(S2CLK),
+	.S2MISO(S2MISO),
+	.S2MOSI(S2MOSI),
+	.S2NSS(S2NSS),
+	.SYSCLK(SYSCLK),
+	.U3RXD(U3RXD),
+	.U3TXD(U3TXD),
+	.WMD(WMD)
+);
+initial                                                
+begin                                                  
+// code that executes only once                        
+// insert code here --> begin         
+                 
+SYSCLK <= 0;
+MRESET <= 0;
+U3TXD <= 0;
+RHDB31 <= 0;
+RHDB32 <= 0;
+HOLD <= 0;
+S2NSS <= 0;
+S2CLK <= 0;
+S2MISO <= 0;
+S2MOSI <= 0;
+WMD <= 0;
+DATA <= 0;
+eachvec <= 1;
+
+#5 MRESET <= 1;
+forever
+  #10 SYSCLK = ~SYSCLK;
+                                                  
+// --> end                                             
+$display("Running testbench");                       
+end                                                    
+always                                        
+// optional sensitivity list                           
+// @(event1 or event2 or .... eventn)                  
+begin   
+                                              
+// code executes for every event on sensitivity list   
+// insert code here --> begin                          
+                                                       
+@eachvec;                                              
+// --> end                                             
+end                                                    
+endmodule
+
